@@ -61,11 +61,6 @@ resource "azurerm_virtual_machine_scale_set" "scaleset" {
 
   os_profile_linux_config {
     disable_password_authentication = true
-
-    ssh_keys {
-      path     = "/home/myadmin/.ssh/authorized_keys"
-      key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYxj4uMT/8fJeS3Vh2U10divlE/ptuQbDl+irE9QVtpKZdewpuo8nNKqr++oFB1olPnI0Xb+IUfn1/zTzYW+WJS9goFcRhi9g96tROKhWHJqwik8gMrl4VlbnPCzKtEobCn1x1NbA7nanX8eXNLY9W0cD9mhLGoojIiiS8UBgrLz2GdSx6tpw0uld32amdzLkn7x0nn2k3cnosyiU5MTXLvc91DDitqd9OeA8uG/h7JC+YWcVl4jj3/BicL6UGPZo2dyOshTbdSGt+9DTPKwZS1jNg6dHNwK5K3WSHMrfGzgoojelN/wRZL8yYI2EwiT7RNtuBAtuSNvrCMxACXL0B JamesJeffrey@vm"
-    }
   }
 
   network_profile {
